@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+<html manifest="manifest.mf"></html>
+-->
+<html manifest="manifest.mf">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- FAVICON -->
+
+    <link rel="shortcut icon" href="BH-logo.png" />
+    <title>Guess Number Game in Chn</title>
+    <!--
+    <style type="text/css">
+    
+    </style>
+
+    <script type="text/javascript">
+      
+    </script>
+    -->
+    <link rel="stylesheet" href="./styles/mystyle.css" />
+
+    <script src="./scripts/init.js"></script>
+  </head>
+
+  <body onload="init()">
+    <header>
+      <div class="top">
+        <h1>GUESS NUMBER GAME</h1>
+      </div>
+    </header>
+
+    <section class="guide">
+      &nbsp Machine generates a random number between 1~1000，Please guess a number and adjusts according the hint, approaching gradually and finally make it. </br>GOOD LUCK！
+    </section>
+    <br />
+    <section class="myForm">
+      <span></span>
+      <form id="login1">
+        <label for="number">My Guess:</label>
+        <input type="number" id="number" name="number" max="1000" min="1" />
+        <button id="Btn" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <canvas id="graph"></canvas>
+    </section>
+    <section class="info">
+      <span id="info"></span>
+    </section>
+  </body>
+</html>
